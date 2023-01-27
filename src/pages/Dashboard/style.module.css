@@ -1,0 +1,8 @@
+.dashboardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C4C4C4;
+    width: 100vw;
+    height: 100vh;
+}

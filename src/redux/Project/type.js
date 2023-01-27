@@ -1,0 +1,4 @@
+export const GET_PROJECTS_SUCCESS = 'GET_PROJECTS_SUCCESS';
+export const SET_ERROR = 'SET_ERROR';
+export const IS_LOADING_TRUE = 'IS_LOADING_TRUE';
+export const IS_LOADING_FALSE = 'IS_LOADING_FALSE';

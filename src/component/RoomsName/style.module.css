@@ -1,0 +1,7 @@
+.roomsNameContainer {
+    padding: 4px 10px;
+    border-radius: 6px;
+    background-color: rgba(60, 178, 228, 0.1);
+    color: #3CB2E4;
+    font-size: 12px;
+}

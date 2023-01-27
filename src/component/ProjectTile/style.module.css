@@ -1,0 +1,163 @@
+.tileContainer {
+    width: 350px;
+    height: 235px;
+
+    background: #FFFFFF;
+    border: 1px solid #DDEDF4;
+    border-radius: 9px;
+}
+
+.topSction {
+    width: 100%;
+    height: 76px;
+    background: #F6F9FA;
+    padding: 20px;
+}
+
+.customerName {
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.untitled {
+    font-weight: 400;
+}
+
+.projectId {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.bottomSction {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 20px 20px 20px;
+    gap: 20px;
+}
+
+.address {
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.roomsNameContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.detailsContainer {
+    font-size: 14px;
+    display: flex;
+}
+
+.detailComtainer {
+    width: 33.333%;
+}
+
+.detailHeader {
+    font-size: 12px;
+    color: #9F9F9F;
+    margin-bottom: 2px;
+}
+
+.totalProject {
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 555px) {
+
+    .tileContainer {
+        width: 60vw;
+        min-width: 80%;
+        height: auto;
+    
+        background: #FFFFFF;
+        border: 1px solid #DDEDF4;
+        border-radius: 9px;
+    }
+    
+    .topSction {
+        width: 100%;
+        height: 76px;
+        background: #F6F9FA;
+        padding: 20px;
+    }
+    
+    .customerName {
+        font-weight: 700;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    .untitled {
+        font-weight: 400;
+    }
+    
+    .projectId {
+        font-size: 12px;
+        opacity: 0.5;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    .bottomSction {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 10px 20px 20px 20px;
+        gap: 20px;
+    }
+    
+    .address {
+        font-size: 12px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    .roomsNameContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+    }
+    
+    .detailsContainer {
+        font-size: 10px;
+        display: flex;
+    }
+    
+    .detailComtainer {
+        width: 33.333%;
+    }
+    
+    .detailHeader {
+        font-size: 10px;
+        color: #9F9F9F;
+        margin-bottom: 2px;
+    }
+    
+    .totalProject {
+        font-weight: 700;
+    }
+    
+}
+
+@media only screen and (max-width: 470px) {
+    .detailsContainer {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .detailComtainer {
+        width: 100%;
+    }
+}

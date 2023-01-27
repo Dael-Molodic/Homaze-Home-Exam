@@ -1,0 +1,38 @@
+.mainContainer {
+    position: relative;
+    width: max(calc(100vw - 278px), 75vw);
+    height: calc(100vh - 92px);
+    margin-top: 18px;
+    padding: 27px 30px;
+    background: #FFFFFF;
+    border: 1px solid #DDEDF4;
+    border-radius: 9px;
+}
+
+.mainSction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 26px;
+    height: calc(100% - 66px);
+    overflow: scroll;
+    margin-top: 20px;
+}
+
+.contractsHeader {
+    position: absolute;
+    font-size: 32px;
+    font-weight: 600;
+    left: 0px;
+    top: -50px;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 2vw;
+}
