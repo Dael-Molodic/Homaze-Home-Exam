@@ -11,8 +11,6 @@
 
 .mainSction {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 26px;
     height: calc(100% - 66px);

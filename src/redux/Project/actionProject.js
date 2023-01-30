@@ -60,8 +60,8 @@ function getFilteredProjects(data, searchTxt) {
     if (!searchTxt) return data.sort(dateSort);
 
     const filteredProjects = data.filter(project => {
-        if ( project.customerName.toLowerCase().startsWith(searchTxt.toLowerCase()) ) return true;
-        if ( project.address.toLowerCase().startsWith(searchTxt.toLowerCase()) ) return true;
+        if ( project.customerName.toLowerCase().includes(searchTxt.toLowerCase()) ) return true;
+        if ( project.address.toLowerCase().includes(searchTxt.toLowerCase()) ) return true;
         return false;
     })
     return filteredProjects.sort(dateSort);
