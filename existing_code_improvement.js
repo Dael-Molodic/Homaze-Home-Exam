@@ -1,6 +1,6 @@
 
 
-const newFunction = (param) => {
+function newFunction(param) {
 
     const getMatchRgx = () => {
         if (!param) {

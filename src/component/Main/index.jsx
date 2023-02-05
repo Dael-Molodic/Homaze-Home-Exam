@@ -27,12 +27,14 @@ function Main() {
 
             <h2 className={style.contractsHeader}>Contracts</h2>
             <SearchInput/>
-            <section className={style.mainSction}>
+            <main className={style.mainSction}>
                 {projects.map(project => <ProjectTile key={project.projectId} project={project}/> )}
-            </section>
+            </main>
 
         </div>
     </>)
 }
+
+
 
 export default Main

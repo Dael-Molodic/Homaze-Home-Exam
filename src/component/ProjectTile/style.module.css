@@ -1,7 +1,8 @@
 .tileContainer {
-    width: 350px;
+    flex: 1 1 350px;
+    max-width: 420px;
+    min-width: 300px;
     height: 235px;
-
     background: #FFFFFF;
     border: 1px solid #DDEDF4;
     border-radius: 9px;
@@ -15,6 +16,7 @@
 }
 
 .customerName {
+    max-width: 350px;
     font-weight: 700;
     overflow: hidden;
     white-space: nowrap;
@@ -39,6 +41,7 @@
 }
 
 .address {
+    max-width: 350px;
     font-size: 14px;
     overflow: hidden;
     white-space: nowrap;
@@ -56,8 +59,8 @@
     display: flex;
 }
 
-.detailComtainer {
-    width: 33.333%;
+.detailSection {
+    flex: 1;
 }
 
 .detailHeader {
@@ -136,7 +139,7 @@
     }
     
     .detailComtainer {
-        width: 33.333%;
+       flex: 1;
     }
     
     .detailHeader {

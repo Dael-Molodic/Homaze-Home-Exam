@@ -39,11 +39,11 @@ export const getProjects = (searchTxt) => {
             
             dispatch(getProjectsSuccess(filteredProjects));
             dispatch(notLoading());
-            dispatch(setError(""));
 
-            if (filteredProjects.length === 0) {
+            if (filteredProjects.length === 0)
                 dispatch(setError(new Error("no results found")));
-            }
+            else dispatch(setError(""));
+
         }) 
         .catch( error => {
             dispatch(getProjectsSuccess([]));
@@ -53,9 +53,6 @@ export const getProjects = (searchTxt) => {
 }
 
 function getFilteredProjects(data, searchTxt) {
-    const dateSort = (a, b) => {
-        return b.updated_timestmp - a.updated_timestmp
-    } 
 
     if (!searchTxt) return data.sort(dateSort);
 
@@ -64,5 +61,11 @@ function getFilteredProjects(data, searchTxt) {
         if ( project.address.toLowerCase().includes(searchTxt.toLowerCase()) ) return true;
         return false;
     })
+
     return filteredProjects.sort(dateSort);
+
+ // sort function
+    function dateSort(a, b) {
+        return b.updated_timestmp - a.updated_timestmp
+    }
 }

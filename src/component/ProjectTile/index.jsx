@@ -41,18 +41,18 @@ function ProjectTile({ project }) {
                     {rooms?.map(room => <RoomsName key={room.id} name={room.name}/>)}
                 </div>
                 <div className={style.detailsContainer}>
-                    <div className={style.detailComtainer}>
+                    <section className={style.detailSection}>
                         <div className={style.detailHeader} >Last updated</div>
                         <div className={style.lastUpdated} >{lastUpdated}</div>
-                    </div>
-                    <div className={style.detailComtainer}>
+                    </section>
+                    <section className={style.detailSection}>
                         <div className={style.detailHeader} >Total</div>
                         <div className={style.totalProject} >{totalCurrencyFormat}</div>
-                    </div>
-                    <div className={style.detailComtainer}>
+                    </section>
+                    <section className={style.detailSection}>
                         <div className={style.detailHeader} >Stage</div>
                         <div className={style.projectState} >{<ProjectState projectState={projectState}/>}</div>
-                    </div>
+                    </section>
                 </div>
             </section>
         </div>
